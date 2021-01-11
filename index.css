@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    color: hsl(95, 51%, 55%);
+}
+
+body {
+    background-color: green;
+}
+
+/* screen < 300px */
+
+div {
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+
+/* 300px < screen < 768px */
+
+@media only screen and (min-width: 300px) {
+    body {
+        background-color: white;
+    }
+
+    #small {
+        width: 66.66%;
+    }
+
+    #medium {
+        width: 33.33%;
+    }
+
+    #large {
+        width: 100%;
+    }
+}
+
+/* screen > 768px */
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: black;
+    }
+
+    #small, #medium, #large {
+        width: 33%;}
+}
+
